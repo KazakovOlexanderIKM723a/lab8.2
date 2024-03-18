@@ -45,6 +45,7 @@ int main() {
         if (arr[i] < 0) {
             if (!firstNF) {
                 firstNF = true;
+                continue;
             }
             else {
              
@@ -59,7 +60,7 @@ int main() {
     }
 
     
-    if (!firstNF || negativeCount == 0) {
+    if (negativeCount == 0) {
         cout << "A sufficient number of negative elements was not detected in the array." << endl;
     }
     else {
